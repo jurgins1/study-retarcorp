@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+	      minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Калькулятор</title>
+</head>
+<body>
+
+
+<script>
+    var numberOne = +prompt("Введите первое число");
+    var operator= prompt("Введите действие");
+    var numberTwo = +prompt("Введите второе число");
+    switch (operator){
+    	case "+":
+    	    alert (numberOne + numberTwo);
+    	    break;
+    	case "-":
+           alert (numberOne - numberTwo);
+            break;
+    	case "*":
+           alert (numberOne * numberTwo);
+    	    break;
+        case "/":
+           alert (numberOne / numberTwo);
+    	    break;
+	    case "%":
+	        alert (numberOne % numberTwo);
+	        break;
+    	default:
+           alert("Вы не ввели число или действие");
+    }
+
+</script>
+</body>
+</html>
