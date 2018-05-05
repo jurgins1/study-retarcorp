@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Проверить являются ли две строки анаграммами</title>
+</head>
+<body>
+
+
+<script>
+    var firstString = prompt("Введите первую строку");
+    var secondString = prompt("Введите вторую строку");
+
+    var firstArr = firstString.split('');
+    var secondArr = secondString.split('');
+    var sortFirstArr = firstArr.sort();
+    var sortSecondArr = secondArr.sort();
+    var newFirstString = sortFirstArr.join('');
+    var newSecondString = sortSecondArr.join('');
+    if (newFirstString===newSecondString){
+        alert(true);
+    }else {
+        alert(false);
+    }
+</script>
+</body>
+</html>

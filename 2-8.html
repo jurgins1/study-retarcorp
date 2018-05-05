@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Подсчитать количество часов между определенными датами</title>
+</head>
+<body>
+
+<script>
+    var d = new Date("1988-08-13 10:00:00");
+    var d2 = new Date("2033-12-22 17:00:00");
+    var msec = d2-d;
+    var hours = msec/(1000*60*60);
+    alert("Количесвто часов: "+hours);
+</script>
+</body>
+</html>
