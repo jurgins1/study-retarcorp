@@ -17,7 +17,7 @@ var result3 = str3.match(reg3);
 console.log(result3);
 
 //HTML-тегов
-var str4 = "<h1>Hello World</h1><b/>";
-var reg4 = /<.*?>/g;
+var str4 = "<h1>Hello World</h1><b/> <> <2> <a href='#'></a>";
+var reg4 = /<[a-z\/].*?>/g;
 var result4 = str4.match(reg4);
 console.log(result4);

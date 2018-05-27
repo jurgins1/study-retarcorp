@@ -1,6 +1,8 @@
 
 var bodyHeight = document.body.scrollHeight;
-var timer = setTimeout(function () {
-    window.scrollBy(0,bodyHeight);
-
- },300);
+var timer = setInterval(function(){
+    window.scrollBy(0,20);
+    if(window.pageYOffset===bodyHeight){
+        clearInterval(timer);
+    }
+},100);
